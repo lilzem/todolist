@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 
-import App from './app';
+import App from './pages/app';
 
 describe('App', () => {
   it('should render successfully', () => {
@@ -10,6 +10,6 @@ describe('App', () => {
 
   it('should have a greeting as the title', () => {
     const { getByText } = render(<App />);
-    expect(getByText(/Welcome todolist/gi)).toBeTruthy();
+    expect(getByText(/todolist/gi)).toBeTruthy();
   });
 });
